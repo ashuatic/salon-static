@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/',
   server: {
     host: '0.0.0.0',
-    port: 5000,
+    port: 5002,
     strictPort: true,
     allowedHosts: [
       '.replit.dev',
@@ -16,7 +16,7 @@ export default defineConfig({
   },
   preview: {
     host: '0.0.0.0',
-    port: 5000,
+    port: 5002,
     strictPort: true,
     allowedHosts: [
       '.replit.dev',
