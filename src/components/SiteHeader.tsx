@@ -13,9 +13,13 @@ export default function SiteHeader() {
 
   return (
     <div className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-10">
-        <NavLink to="/" className="text-lg font-display font-bold text-slate-900">
-          SPIN Salon
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3 sm:px-10">
+        <NavLink to="/" className="flex items-center" aria-label="SPIN Salon home">
+          <img
+            src="/black-logo.png"
+            alt="SPIN Salon"
+            className="h-10 w-auto"
+          />
         </NavLink>
         <div className="flex gap-4">
           <NavLink to="/" className={navLinkClassName} end>

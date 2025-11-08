@@ -9,18 +9,13 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5002,
     strictPort: true,
-    allowedHosts: [
-      '.replit.dev',
-      '.pike.replit.dev'
-    ]
+    hmr: {
+      clientPort: 443
+    }
   },
   preview: {
     host: '0.0.0.0',
     port: 5002,
-    strictPort: true,
-    allowedHosts: [
-      '.replit.dev',
-      '.pike.replit.dev'
-    ]
+    strictPort: true
   }
 })
