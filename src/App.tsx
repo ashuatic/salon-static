@@ -2,27 +2,32 @@ const serviceCategories = [
   {
     name: 'Hair',
     description:
-      'Women’s & Men’s haircuts, colour transformations, straightening, anti-frizz, highlights, spa rituals, botox, and signature styling.',
+      "Women's & Men's haircuts, colour transformations, straightening, anti-frizz, highlights, spa rituals, botox, and signature styling.",
+    image: '/hair.jpg',
   },
   {
     name: 'Skin',
     description:
       'Bleach & de-tan therapies, clean-up and premium facials, peel-off masks, and targeted skincare for instant radiance.',
+    image: '/skin.jpg',
   },
   {
     name: 'Makeup',
     description:
       'Professional day-to-night looks, editorial finishes, party glam, and fresh, camera-ready glow for every celebration.',
+    image: '/makeup.jpg',
   },
   {
     name: 'Nails',
     description:
       'Artistic nail extensions, long-lasting gel finishes, intricate nail art, and classic manicures with spa-grade care.',
+    image: '/nails.jpg',
   },
   {
     name: 'Bridal',
     description:
       'Pre-bridal indulgences, wedding-day artistry, groom grooming, and curated packages that travel with you through every ceremony.',
+    image: '/bridal.jpg',
   },
 ]
 
@@ -33,8 +38,8 @@ const heroHighlights = [
 ]
 
 const quickServices = [
-  'Women’s Haircut & Styling',
-  'Men’s Haircut & Grooming',
+  "Women's Haircut & Styling",
+  "Men's Haircut & Grooming",
   'Hair Colouring & Highlights',
   'Hair Straightening & Anti-Frizz Treatments',
   'Hair Spa & Scalp Rituals',
@@ -57,104 +62,117 @@ const quickServices = [
 const testimonials = [
   {
     quote:
-      '“Absolutely love this place! The team at Spin Salon is incredible. I came in for a haircut and walked out feeling like a whole new person.”',
-    name: 'Jenny Wilson',
+      '"I\'m so happy and relieved to have finally found my new hair salon! The staff is polite, friendly, and well-trained. 5-star service all the way!"',
+    name: 'Priya S.',
+    image: '/jenny.png',
   },
   {
     quote:
-      '“The best salon experience I’ve ever had! The staff is so friendly and professional, and they truly know their craft. Highly recommend the hair spa.”',
-    name: 'Gabril Wilson',
+      '"The hairdresser was very informative on hair care and product recommendations. They truly know their craft and maintain excellent hygiene standards."',
+    name: 'Arjun M.',
+    image: '/gabril.png',
   },
   {
     quote:
-      '“Spin Salon is my go-to for all things beauty. From nails to facials, they’ve nailed it every time. Five stars all the way!”',
-    name: 'Tony Ruiz',
+      '"Gagan and the team are amazing! Close attention to detail, professional service, and I always leave feeling confident and refreshed."',
+    name: 'Sneha R.',
+    image: '/tony.png',
   },
 ]
 
 const stats = [
-  { value: '13+', label: 'Years of Expertise' },
-  { value: '3+', label: 'States Across India' },
-  { value: '100+', label: 'Studio Locations' },
-  { value: '1500+', label: 'Beauty Professionals' },
+  { value: '13+', label: 'Years' },
+  { value: '3+', label: 'States' },
+  { value: '100+', label: 'Branch' },
+  { value: '1500+', label: 'Professionals' },
 ]
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-rose-50 to-amber-50 text-slate-800">
-      <header className="relative overflow-hidden bg-[url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=60')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-transparent" />
-        <div className="relative mx-auto flex max-w-6xl flex-col gap-12 px-6 py-28 sm:px-10 lg:flex-row lg:items-center lg:gap-20 lg:py-36">
-          <div className="flex-1 text-white">
-            <span className="inline-flex items-center rounded-full bg-white/10 px-4 py-1 text-sm font-medium uppercase tracking-widest text-rose-100">
-              Welcome to SPIN Salon
-            </span>
-            <h1 className="mt-6 font-display text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-              Experience Luxury Beauty & Grooming at SPIN Unisex Salon
+    <div className="min-h-screen bg-white text-slate-800">
+      <header className="relative overflow-hidden bg-gradient-to-br from-purple-600 via-pink-500 to-rose-400">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 lg:py-32">
+          <div className="text-center text-white">
+            <p className="text-lg font-light tracking-wide">Welcome to</p>
+            <h1 className="mt-4 font-display text-6xl font-bold leading-tight sm:text-7xl lg:text-8xl drop-shadow-lg">
+              SPIN
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-rose-100">
-              SPIN is a nationwide destination for expert hair, skin, and bridal artistry. Step into
-              indulgent interiors, meet dedicated stylists, and leave feeling confident, radiant, and
-              ready for every occasion.
+            <h2 className="mt-2 font-display text-5xl font-bold leading-tight sm:text-6xl lg:text-7xl drop-shadow-lg">
+              SALON
+            </h2>
+            <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed drop-shadow-md">
+              SPIN is a unisex salon with multiple locations across India, offering expert beauty
+              services. Our skilled team ensures you leave feeling confident and refreshed in a
+              relaxing, luxurious ambiance.
             </p>
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
               <a
                 href="tel:+917022793131"
-                className="inline-flex items-center justify-center rounded-full bg-brand px-8 py-3 text-sm font-semibold uppercase tracking-widest text-white shadow-lg transition hover:bg-brand-dark"
+                className="inline-flex items-center justify-center rounded-full bg-white px-10 py-4 text-base font-semibold uppercase tracking-wide text-purple-600 shadow-xl transition hover:bg-purple-50 hover:shadow-2xl hover:scale-105"
               >
                 Call 070227 93131
               </a>
               <a
                 href="#visit"
-                className="inline-flex items-center justify-center rounded-full border border-white/40 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-white transition hover:border-white hover:bg-white/10"
+                className="inline-flex items-center justify-center rounded-full border-2 border-white px-10 py-4 text-base font-semibold uppercase tracking-wide text-white transition hover:bg-white/20 backdrop-blur-sm"
               >
                 Locate Us
               </a>
             </div>
           </div>
-          <div className="flex-1 space-y-6 rounded-3xl bg-white/10 p-8 backdrop-blur">
-            {heroHighlights.map((highlight) => (
-              <div
-                key={highlight}
-                className="rounded-2xl border border-white/20 bg-white/5 p-5 text-sm font-medium text-rose-100"
-              >
-                {highlight}
-              </div>
-            ))}
-            <p className="text-xs uppercase tracking-[0.35em] text-rose-100/80">
-              Crafted by India’s premier beauty collective
-            </p>
-          </div>
         </div>
       </header>
 
-      <main>
-        <section className="mx-auto -mt-16 max-w-6xl px-6 sm:px-10">
-          <div className="rounded-3xl bg-white p-8 shadow-xl ring-1 ring-black/5 md:p-12">
-            <h2 className="text-center font-display text-3xl font-semibold text-slate-900 sm:text-4xl">
-              What We&apos;re Offering to Our Customers
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-center text-base text-slate-600">
-              At SPIN Salon, each service is a signature experience—crafted by specialists, elevated
-              by premium products, and delivered in soothing, luxurious surroundings.
-            </p>
-
-            <div className="mt-12 grid gap-6 md:grid-cols-3 lg:grid-cols-5">
-              {serviceCategories.map((category) => (
-                <div
-                  key={category.name}
-                  className="group flex flex-col gap-4 rounded-3xl border border-slate-200 bg-gradient-to-br from-white via-rose-50/40 to-amber-50/40 p-6 shadow-sm transition hover:-translate-y-1 hover:border-brand/50 hover:shadow-lg"
-                >
-                  <h3 className="font-display text-xl font-semibold text-slate-900">
-                    {category.name}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-slate-600">{category.description}</p>
-                  <span className="mt-auto text-xs font-semibold uppercase tracking-widest text-brand">
-                    Explore services →
-                  </span>
-                </div>
-              ))}
+      <section className="relative -mt-8 mx-auto max-w-6xl px-6 sm:px-10 z-10">
+        <div className="grid gap-4 md:grid-cols-3">
+          {heroHighlights.map((highlight, index) => (
+            <div
+              key={index}
+              className="rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-100 p-6 shadow-xl text-center transition hover:shadow-2xl hover:-translate-y-1 hover:border-purple-200"
+            >
+              <p className="text-sm font-semibold text-purple-900">{highlight}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <main className="bg-gradient-to-b from-white via-purple-50/20 to-pink-50/20">
+        <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:py-28">
+          <div className="text-center">
+            <h2 className="font-display text-4xl font-bold text-slate-900 sm:text-5xl">
+              What We&apos;re Offering To
+            </h2>
+            <h3 className="mt-2 font-display text-4xl font-bold text-slate-900 sm:text-5xl">
+              Our Customers
+            </h3>
+            <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-600">
+              At Spin Salon, we offer a wide range of services tailored to meet your every beauty
+              and grooming need. From haircuts and styling to skincare, makeup, and wellness
+              treatments, our curated offerings are designed to leave you looking and feeling
+              fabulous. Discover the perfect blend of expertise, luxury, and personalized care in
+              every service we provide.
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+            {serviceCategories.map((category) => (
+              <div
+                key={category.name}
+                className="group relative overflow-hidden rounded-3xl bg-white shadow-xl transition hover:-translate-y-2 hover:shadow-2xl border border-purple-100"
+              >
+                <div className="aspect-[4/5] overflow-hidden">
+                  <img
+                    src={category.image}
+                    alt={category.name}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6 text-white">
+                  <h3 className="font-display text-2xl font-bold drop-shadow-lg">{category.name}</h3>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -191,52 +209,69 @@ function App() {
           </div>
         </section>
 
-        <section className="mx-auto mt-20 max-w-6xl px-6 sm:px-10">
-          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-            <div className="space-y-8 rounded-3xl bg-white p-8 shadow-xl ring-1 ring-black/5 md:p-12">
-              <h2 className="font-display text-3xl font-semibold text-slate-900 sm:text-4xl">
-                Don&apos;t Believe Us? Hear It from Our Customers
-              </h2>
-              <p className="text-base text-slate-600">
-                Every visit is a personalised ritual. Our guests trust us with their biggest
-                milestones and everyday glow-ups because we make luxury feel effortless.
-              </p>
-              <div className="space-y-6">
-                {testimonials.map((testimonial) => (
-                  <figure
-                    key={testimonial.name}
-                    className="rounded-3xl border border-slate-200 bg-gradient-to-br from-white via-rose-50/40 to-amber-50/40 p-6 shadow-sm"
-                  >
-                    <blockquote className="text-base italic text-slate-700">
-                      {testimonial.quote}
-                    </blockquote>
-                    <figcaption className="mt-4 text-sm font-semibold uppercase tracking-widest text-brand">
-                      {testimonial.name}
-                    </figcaption>
-                  </figure>
-                ))}
+        <section className="mx-auto mt-20 max-w-7xl px-6 py-20 sm:px-10">
+          <div className="text-center">
+            <h2 className="font-display text-4xl font-bold text-slate-900 sm:text-5xl">
+              Don&apos;t believe us?
+            </h2>
+            <h3 className="mt-2 font-display text-4xl font-bold text-slate-900 sm:text-5xl">
+              Hear it from our customers
+            </h3>
+            <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-600">
+              At Spin Unisex Salon, our clients are at the heart of everything we do. Each
+              experience is crafted with care, precision, and passion, leaving our clients feeling
+              confident and radiant. But don&apos;t just take our word for it—here&apos;s what our
+              valued clients have to say about their journey with us:
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-10 md:grid-cols-3">
+            {testimonials.map((testimonial) => (
+              <div
+                key={testimonial.name}
+                className="flex flex-col items-center rounded-3xl bg-white p-8 shadow-lg transition hover:shadow-xl"
+              >
+                <div className="h-24 w-24 overflow-hidden rounded-full border-4 border-brand/20">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <h4 className="mt-6 text-xl font-bold text-slate-900">{testimonial.name}</h4>
+                <blockquote className="mt-4 text-center text-lg italic leading-relaxed text-slate-600">
+                  {testimonial.quote}
+                </blockquote>
               </div>
-            </div>
-            <div className="flex flex-col justify-center gap-6 rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 p-10 text-white shadow-xl">
-              <h3 className="font-display text-2xl font-semibold">
-                Now We Are a Nationwide Beauty Movement
-              </h3>
-              <p className="text-sm text-rose-100">
-                From our first Bangalore studio in 2011 to a network that spans the South of India,
-                SPIN Salon is synonymous with premium beauty, innovation, and care.
+            ))}
+          </div>
+        </section>
+
+        <section className="mx-auto mt-20 max-w-7xl px-6 py-20 sm:px-10">
+          <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-purple-600 via-pink-500 to-rose-400 px-10 py-16 text-white shadow-2xl lg:px-20 lg:py-20">
+            <div className="text-center">
+              <h2 className="font-display text-4xl font-bold sm:text-5xl">
+                <span className="text-brand-light">Now</span> We Are
+              </h2>
+              <p className="mx-auto mt-6 max-w-3xl text-lg text-rose-100">
+                From our humble beginnings to becoming a renowned name in the beauty and wellness
+                industry, Spin Unisex Salon has grown into a symbol of excellence, innovation, and
+                care. Starting with a single salon in Bangalore in 2011, we have expanded our reach
+                across South India, creating a network of over 55+ centers that redefine beauty and
+                wellness.
               </p>
-              <dl className="grid gap-6 sm:grid-cols-2">
-                {stats.map((stat) => (
-                  <div key={stat.label} className="rounded-2xl bg-white/10 p-4 text-center">
-                    <dt className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-100">
-                      {stat.label}
-                    </dt>
-                    <dd className="mt-2 font-display text-3xl font-semibold text-white">
-                      {stat.value}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
+            </div>
+
+            <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              {stats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="rounded-2xl bg-white/10 p-8 text-center backdrop-blur transition hover:bg-white/20"
+                >
+                  <div className="font-display text-5xl font-bold text-white">{stat.value}</div>
+                  <div className="mt-3 text-lg font-semibold text-rose-100">{stat.label}</div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -257,31 +292,20 @@ function App() {
                 </p>
               </div>
 
-              <div className="grid gap-6 sm:grid-cols-2">
-                <div className="rounded-3xl border border-slate-200 bg-slate-50/60 p-6">
-                  <h3 className="text-lg font-semibold text-slate-900">Book Your Session</h3>
-                  <p className="mt-3 text-sm text-slate-600">
-                    Call us for appointments, bridal trials, or curated packages.
-                  </p>
-                  <a
-                    href="tel:+917022793131"
-                    className="mt-5 inline-flex items-center justify-center rounded-full bg-brand px-6 py-2 text-sm font-semibold uppercase tracking-widest text-white shadow transition hover:bg-brand-dark"
-                  >
-                    +91 70227 93131
-                  </a>
-                  <p className="mt-3 text-xs text-slate-500">
-                    We respond rapidly during salon hours (9:00 AM – 10:00 PM).
-                  </p>
-                </div>
-                <div className="rounded-3xl border border-slate-200 bg-slate-50/60 p-6">
-                  <h3 className="text-lg font-semibold text-slate-900">Head Office</h3>
-                  <p className="mt-3 text-sm text-slate-600">
-                    No.1243, 1st Block, Above Kanti Sweets, Near Axis Bank, Vidyaranyapura, Bangalore – 560 097
-                  </p>
-                  <p className="mt-3 text-xs text-slate-500">
-                    Support: +91 72040 63131 · Franchisee: +91 76194 53131
-                  </p>
-                </div>
+              <div className="rounded-3xl border border-slate-200 bg-slate-50/60 p-6">
+                <h3 className="text-lg font-semibold text-slate-900">Book Your Session</h3>
+                <p className="mt-3 text-sm text-slate-600">
+                  Call us for appointments, bridal trials, or curated packages.
+                </p>
+                <a
+                  href="tel:+917022793131"
+                  className="mt-5 inline-flex items-center justify-center rounded-full bg-brand px-6 py-2 text-sm font-semibold uppercase tracking-widest text-white shadow transition hover:bg-brand-dark"
+                >
+                  +91 70227 93131
+                </a>
+                <p className="mt-3 text-xs text-slate-500">
+                  We respond rapidly during salon hours (9:00 AM – 10:00 PM).
+                </p>
               </div>
             </div>
 
@@ -298,20 +322,17 @@ function App() {
         </section>
 
         <section className="mx-auto mt-20 max-w-6xl px-6 sm:px-10">
-          <div className="rounded-3xl bg-slate-900 px-8 py-12 text-white shadow-xl sm:px-10 lg:px-16">
+          <div className="rounded-3xl bg-gradient-to-br from-purple-600 via-pink-500 to-rose-400 px-8 py-12 text-white shadow-xl sm:px-10 lg:px-16">
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
               <div>
-                <h3 className="font-display text-3xl font-semibold">
-                  Write Tips &amp; Win Rewards with SPIN Salon
-                </h3>
-                <p className="mt-3 max-w-xl text-sm text-rose-100">
-                  Your feedback powers the SPIN experience. Share your glow-up story, recommend
-                  favourite stylists, and unlock exclusive salon perks.
+                <h3 className="font-display text-3xl font-bold">Write Tips &amp; Win Rewards</h3>
+                <p className="mt-3 font-display text-2xl font-semibold">
+                  Your <span className="text-amber-200">Feedback</span> is Valuable for Us
                 </p>
               </div>
               <a
                 href="tel:+917022793131"
-                className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-2 text-sm font-semibold uppercase tracking-widest text-white transition hover:border-white hover:bg-white/10"
+                className="inline-flex items-center justify-center rounded-full border-2 border-white px-8 py-3 text-sm font-semibold uppercase tracking-widest text-white transition hover:bg-white hover:text-brand"
               >
                 Share Feedback
               </a>
@@ -321,28 +342,63 @@ function App() {
       </main>
 
       <footer className="mt-20 bg-slate-950 py-12 text-slate-200">
-        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 sm:px-10 lg:flex-row lg:items-start lg:justify-between">
-          <div className="max-w-sm space-y-4">
-            <h3 className="font-display text-2xl font-semibold text-white">SPIN Unisex Salon</h3>
-            <p className="text-sm text-slate-400">
-              1st Floor, Sai Sobagu, 3rd Cherry Lane, Green Glen Layout, Bellandur, Bengaluru, Karnataka 560103
-            </p>
-            <p className="text-xs text-slate-500">© {new Date().getFullYear()} SPIN Salon. All Rights Reserved.</p>
+        <div className="mx-auto max-w-7xl px-6 sm:px-10">
+          <div className="grid gap-12 lg:grid-cols-2">
+            <div className="space-y-4">
+              <h3 className="font-display text-2xl font-bold text-white">Support</h3>
+              <div className="space-y-2 text-sm text-slate-300">
+                <p>
+                  <a href="tel:+917022793131" className="hover:text-brand-light">
+                    +91 70227 93131
+                  </a>
+                </p>
+                <p>
+                  <a href="tel:+919591113131" className="hover:text-brand-light">
+                    +91 95911 13131
+                  </a>
+                </p>
+                <p>
+                  <a href="mailto:info@spinsalonbellandur.in" className="hover:text-brand-light">
+                    info@spinsalonbellandur.in
+                  </a>
+                </p>
+                <p className="text-slate-400">All day : 9:00AM - 10:00PM</p>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="font-display text-2xl font-bold text-white">Follow Us</h3>
+              <div className="flex gap-4 text-sm">
+                <a
+                  href="https://www.youtube.com/@SpinSalonOfficial"
+                  className="text-slate-300 hover:text-brand-light"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Youtube
+                </a>
+                <a
+                  href="https://www.instagram.com/spinsalonofficial/"
+                  className="text-slate-300 hover:text-brand-light"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://www.facebook.com/spinsalon.in/"
+                  className="text-slate-300 hover:text-brand-light"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="space-y-4 text-sm text-slate-300">
-            <p>
-              <span className="font-semibold text-white">Call:</span>{' '}
-              <a href="tel:+917022793131" className="hover:text-brand-light">
-                +91 70227 93131
-              </a>
-            </p>
-            <p>
-              <span className="font-semibold text-white">Salon Hours:</span> 9:00 AM – 10:00 PM
-            </p>
-            <p>
-              <span className="font-semibold text-white">Support:</span> +91 72040 63131 · +91 76194 53131
-            </p>
-            <p className="text-xs text-slate-500">feedback@spinsalon.in · feedback.spin@gmail.com</p>
+
+          <div className="mt-12 border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
+            Copyright © {new Date().getFullYear()} All rights reserved
           </div>
         </div>
       </footer>

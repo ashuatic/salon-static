@@ -4,5 +4,23 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/', // 👈 IMPORTANT: must match your repo name
+  base: '/',
+  server: {
+    host: '0.0.0.0',
+    port: 5000,
+    strictPort: true,
+    allowedHosts: [
+      '.replit.dev',
+      '.pike.replit.dev'
+    ]
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 5000,
+    strictPort: true,
+    allowedHosts: [
+      '.replit.dev',
+      '.pike.replit.dev'
+    ]
+  }
 })
